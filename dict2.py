@@ -38,3 +38,53 @@ for x,y in thisdict.items():
     print(x,y)
 
 print("\n-------------------")
+
+#copy() method
+mydict = thisdict.copy()
+print(mydict)
+
+print("\n-------------------")
+
+#dict() - to copy a dict
+mydict = dict(thisdict)
+print(mydict)
+
+print("\n-------------------")
+
+#nested dictionaries
+myfamily = {
+  "child1" : {
+    "name" : "Emil",
+    "year" : 2004
+  },
+  "child2" : {
+    "name" : "Tobias",
+    "year" : 2007
+  },
+  "child3" : {
+    "name" : "Linus",
+    "year" : 2011
+  }
+}
+
+print(myfamily)
+
+print("\n-------------------")
+
+#Access Items in Nested Dictionaries
+print(myfamily["child2"]["year"])
+
+print("\n-------------------")
+
+#Loop Through Nested Dictionaries
+for x,obj in myfamily.items():
+    print(x)
+
+    for y in obj:
+        print(y + ":" , obj[y])
+
+#Create a dictionary with 3 keys, all with the value 0
+x = ('key1','key2','key3')
+y = 0
+thisdict = dict.fromkeys(x,y)
+print(thisdict)
