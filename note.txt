@@ -1,0 +1,82 @@
+DICTIONARIES
+------------
+- used to store data values in key:value pairs
+- collection of ordered, changeable and do not allow duplicates 
+- wirtten using curly brakets, as key:value pairs
+    eg :#creating a dictionary
+        thisdict = {
+            "brand" : "Ford",
+            "model" : "Mustang",
+            "year" : 1964
+        }
+        print(thisdict)
+
+- can be referred to by using the key name
+- Dictionaries cannot have two items with the same key
+
+- len() method is used to check how many items are present.
+
+- type() method is used to check the datatype, usually it is an object with data type dict 
+
+DATA TYPES
+----------
+can be of any data type : str, int, bool, list
+
+dict() Constructor
+------------------
+- to make a dictionary
+    thisdict = dict(name = "John", age = 36, country = "Norway")
+    print(thisdict)
+
+Access Dictionary Items
+-----------------------
+-  by referring to its key name, inside square brackets
+- can also use get()
+    eg: x = thisdict.get("model")
+
+- key() - returns a list with all the key in the dict.
+    eg: x = thisdict.keys()
+
+- values() - returns a list of all the values in the dict.
+    eg: x = thisdict.values()
+
+- items() - return each item in a dict, as tuples in a list
+
+- To determine if a specified key is present in a dictionary use the 'in' keyword
+
+
+Change Dictionary Items
+-----------------------
+- can change the value of a specific item by referring to its key name
+    eg: thisdict["year"] = 2018 //changed the year 2020 to 2018
+
+- update() method will update the dictionary with the items from the given argument.
+- argument must be a dictionary, or an iterable object with key:value pairs
+
+Remove Dictionary Items
+-----------------------
+pop() - removes the item with the specified key name
+popitem() - removes the last inserted item
+
+del - removes the item with the specified key name, if not specify the key then the dict will be deleted
+
+clear() - will empty the dict
+
+Loop Dictionaries
+-----------------
+- for in Loop
+- will return keys, there are methods to return values
+    eg: for x in thisdict:
+            print(x)
+- to return values
+    eg: for x in thisdict:
+            print(thisdict[x])
+- can also use values() - to return values
+- keys() - to return keys
+
+- Loop through both keys and values use items()
+
+Copy Dictionaries
+-----------------
+
+
